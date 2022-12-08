@@ -1,0 +1,255 @@
+/******** VARIABLES ********/
+
+:root {
+    --primary: #ffcb45;
+    --secondary: #fb9333;
+    --bg-primary: #fff9ea;
+    --text-dark: #1d1d1d;
+    --text-gray: rgba(29, 29, 29, 0.7);
+    --text-orange-dark: #8d6312;
+    --text-white: #ffffff;
+  
+    --font-3xs: 10px;
+    --font-2xs: 12px;
+    --font-xs: 14px;
+    --font-sm: 16px;
+    --font-md: 18px;
+    --font-lg: 20px;
+    --font-xl: 24px;
+    --font-2xl: 26px;
+  }
+  
+  /******** GLOBAL ********/
+  
+  * {
+    font-family: "Readex Pro", sans-serif;
+  }
+  
+  html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #fbfefd;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  
+  /******** NAVBAR ********/
+  .barnav{
+    background-color: var(--bg-primary);
+    
+  }
+ 
+  
+ /******** presentation ********/
+
+.presentation {
+    max-width: 80%;
+    margin: 40px auto;
+  }
+  
+  .presentation__video-container {
+    display: flex;
+    justify-content: center;
+  
+    width: 100%;
+    max-width: 1000px;
+  
+    margin: 40px auto;
+  
+    border: 5px solid var(--primary);
+    border-radius: 30px;
+  }
+  
+  .presentation__video-container video {
+    max-width: 100%;
+    border-radius: 25px;
+  }
+  
+  .presentation__description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    margin-top: 20px;
+  }
+  
+  .presentation__description {
+    display: flex;
+    flex-direction: column;
+  
+    text-align: center;
+    gap: 5px;
+  }
+  
+  .presentation__description > * {
+    margin: 0;
+  }
+  
+  .presentation__description span {
+    color: var(--text-orange-dark);
+  
+    font-weight: 500;
+    font-size: var(--font-3xs);
+  }
+  
+  .presentation__description h2 {
+    color: var(--text-dark);
+  
+    font-weight: 700;
+    font-size: var(--font-md);
+  }
+  
+  .presentation__description p {
+    color: var(--text-dark);
+  
+    font-weight: 500;
+    font-size: var(--font-3xs);
+  }
+  
+  /******** TIPS SECTION ********/
+  
+  .tips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  
+    width: 90%;
+    max-width: 1000px;
+  
+    margin-top: 30px;
+  }
+  
+  .tips__container {
+    text-align: center;
+  }
+  
+  .tips__img-container {
+    display: flex;
+    justify-content: center;
+    height: 130px;
+  }
+  
+  .tips__img-container img {
+    margin-block: auto;
+  }
+  
+  .tips__container h3 {
+    margin-bottom: 5px;
+    font-size: var(--font-md);
+    font-weight: 600;
+  }
+  
+  .tips__container p {
+    margin-top: 15px;
+    font-size: var(--font-3xs);
+    font-weight: 500;
+  }
+  
+  /******** SECTION FOODS ********/
+  
+  .foods {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 35px;
+  
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+  }
+  
+  .foods__item {
+    position: relative;
+  
+    max-width: 100%;
+    height: 390px;
+    cursor: pointer;
+  
+    background: center/cover no-repeat;
+  
+    border-radius: 50px;
+  }
+  
+  .foods__item img,
+  .foods__item source {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  
+  .foods__item-description {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    z-index: 10;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .foods__item-description > * {
+    margin: 0;
+    color: var(--text-white);
+  }
+  
+  .foods__item-description p {
+    font-size: var(--font-sm);
+    font-weight: 500;
+  }
+  
+  .foods__item-description h4 {
+    font-size: var(--font-2xl);
+    font-weight: 700;
+  }
+  
+  /******** SECTION FOODS ********/
+  
+  .services {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      
+      width: 90%;
+      max-width: 1000px;
+      
+      margin: 30px auto;
+    }
+    
+    .services__item-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        
+        width: 100%;
+    }
+    
+    .service__item-img {
+        border-radius: 20px;
+    }
+    
+    .service__item-description {
+        font-weight: 500;
+        font-size: var(--font-xs);
+        text-align: center;
+    }
+    /******** FOOTER ********/
+    
+    .foot{
+        background-color: var(--bg-primary);
+    }
+    
